@@ -22,11 +22,24 @@
  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
+// v0.1a (Alpha)
 
-// v0.1a
+/*
+ This release is quite experimental.
+ 
+ $text -> The text you want to output via phpTextRender. Usage: phpTextRender.php?text=HelloWorld
+ $font -> The font you want to use. Currently Truetype fonts are supported. e.g.: $font = "Arial.ttf"; You have to use and upload your own fonts. No font files are supplied with phpTextRender.
+ 
+ $color -> Default = Red; When $color is set, the font will be gray. This is quite costumized yet and not really usable for common projects.
+
+ The image will be output with GIF-Format.
+ 
+ Tested with GD 2.0 only.
+ 
+*/
 
 $text = $_GET["text"];
-$font = "Arial.TTF";
+$font = "";
 
 if (isset($_GET["size"])) $getsize = $_GET["size"];
 	else $getsize = 8;
