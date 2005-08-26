@@ -39,7 +39,7 @@
 */
 
 $text = $_GET["text"];
-$font = "";
+$font = "fonts/Arial.ttf";
 
 if (isset($_GET["size"])) $getsize = $_GET["size"];
 	else $getsize = 8;
